@@ -507,6 +507,7 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
 .member .en { font-size: 14px; color: var(--muted); }
 .member .dept { font-size: 13px; color: var(--muted); margin-top: 6px; }
 .member .role { margin-top: var(--s2); }
+.member .role .chip { white-space: normal; line-height: 1.5; padding: 3px 10px; border-radius: 10px; }
 .advisor { margin-top: var(--s5); position: relative; overflow: hidden; display: flex; gap: var(--s5); align-items: center; flex-wrap: wrap; background: var(--primary); color: var(--on-primary); border: 0; padding: var(--s8); }
 .advisor .avatar { background: color-mix(in oklab, var(--on-primary) 18%, transparent); color: var(--on-primary); width: 64px; height: 64px; font-size: 26px; }
 .advisor .k { font-size: 14px; opacity: .85; }
@@ -957,6 +958,7 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
       <div class="card" style="margin-top: var(--s10);">
         <div class="card-head"><h3 data-i18n="about.log">網站更新紀錄</h3></div>
         <ul class="changelog">
+          <li><span class="ver">v1.1<span class="date">2026-11-24</span></span><span data-i18n="log.v11">補上全體組員的分工。</span></li>
           <li><span class="ver">v1.0<span class="date">2026-11-23</span></span><span data-i18n="log.v10">首次發布：總覽、示範職缺篩選、KSA 分析、PM vs PjM 比較、三層薪資資訊、配適度與準備清單、團隊介紹；支援中英文、深淺色與手機版。</span></li>
         </ul>
       </div>
@@ -986,7 +988,7 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
 <footer class="foot">
   <svg class="ridge" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 56 L0 40 L120 24 L230 38 L360 10 L470 32 L600 18 L720 36 L860 6 L980 30 L1110 16 L1240 34 L1360 20 L1440 28 L1440 56 Z" fill="currentColor"/></svg>
   <div class="foot-inner">
-    <span data-i18n="foot.left">PMJ Career Navigator v1.0　第 2 組課程專題原型，示範資料僅供教學用途</span>
+    <span data-i18n="foot.left">PMJ Career Navigator v1.1　第 2 組課程專題原型，示範資料僅供教學用途</span>
     <span><span data-i18n="foot.advisor">指導老師</span>：Prof. Shihmin Lo　<a href="#overview" data-i18n="foot.top">回到山腳</a></span>
   </div>
 </footer>
@@ -1075,9 +1077,9 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
       'rm1.t': '可運作的 MVP', 'rm1.d': '登入與個人檔案、每日職缺同步、薪資比較、可保存的準備清單、Email 提醒。',
       'rm2.t': 'AI 能力分析', 'rm2.d': '附原文依據的技能萃取、可解釋配適度、商務英文與跨文化學習模組。',
       'rm3.t': '主動式職涯助理', 'rm3.d': '新職缺個人化推薦、瀏覽器推播、履歷回饋與面試練習。',
-      'about.log': '網站更新紀錄', 'log.v10': '首次發布：總覽、示範職缺篩選、KSA 分析、PM vs PjM 比較、三層薪資資訊、配適度與準備清單、團隊介紹；支援中英文、深淺色與手機版。',
+      'about.log': '網站更新紀錄', 'log.v11': '補上全體組員的分工。', 'log.v10': '首次發布：總覽、示範職缺篩選、KSA 分析、PM vs PjM 比較、三層薪資資訊、配適度與準備清單、團隊介紹；支援中英文、深淺色與手機版。',
       'team.title': '團隊與分工', 'team.lead': '第 2 組（G2）成員。', 'team.role': '分工待補', 'team.advisor': '指導老師', 'team.course': 'AI 世代產品經理職涯策略與專案管理導論',
-      'foot.left': 'PMJ Career Navigator v1.0　第 2 組課程專題原型，示範資料僅供教學用途', 'foot.advisor': '指導老師', 'foot.top': '回到山腳',
+      'foot.left': 'PMJ Career Navigator v1.1　第 2 組課程專題原型，示範資料僅供教學用途', 'foot.advisor': '指導老師', 'foot.top': '回到山腳',
       themeToDark: '切換深色模式', themeToLight: '切換淺色模式', langTo: 'Switch to English'
     },
     en: {
@@ -1152,9 +1154,9 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
       'rm1.t': 'Working MVP', 'rm1.d': 'Sign-in and profiles, daily job sync, salary comparison, saved checklists and email reminders.',
       'rm2.t': 'AI competency analysis', 'rm2.d': 'Skill extraction with quoted evidence, explainable fit scores, business English and cross-cultural modules.',
       'rm3.t': 'Proactive career assistant', 'rm3.d': 'Personal recommendations for new jobs, browser push, resume feedback and interview practice.',
-      'about.log': 'Revision log', 'log.v10': 'First release: overview, demo job filters, KSA analysis, PM vs PjM comparison, three-tier salary insights, fit score and checklist, team section. Supports Chinese/English, light/dark and mobile.',
+      'about.log': 'Revision log', 'log.v11': 'Added every team member\u2019s role.', 'log.v10': 'First release: overview, demo job filters, KSA analysis, PM vs PjM comparison, three-tier salary insights, fit score and checklist, team section. Supports Chinese/English, light/dark and mobile.',
       'team.title': 'Team', 'team.lead': 'Group 2 (G2) members.', 'team.role': 'Role to be added', 'team.advisor': 'Faculty advisor', 'team.course': 'Product Manager Career Strategy and Project Management in the AI Era',
-      'foot.left': 'PMJ Career Navigator v1.0. Group 2 course prototype. Demo data for teaching only.', 'foot.advisor': 'Advisor', 'foot.top': 'Back to the trailhead',
+      'foot.left': 'PMJ Career Navigator v1.1. Group 2 course prototype. Demo data for teaching only.', 'foot.advisor': 'Advisor', 'foot.top': 'Back to the trailhead',
       themeToDark: 'Switch to dark mode', themeToLight: 'Switch to light mode', langTo: '切換為中文'
     }
   };
@@ -1211,14 +1213,15 @@ details.table-toggle summary { cursor: pointer; color: var(--primary); font-size
     J(24, 'PM', '數位產品經理（儲備）', 'clear', 'taichung', 'onsite', 'logistics', 'not_specified', '', ['m', 40000, 48000], 'college', 'none', ['k_ux', 'k_data'], ['s_spec', 's_analysis', 's_proto'], ['a_proactive'], [], [2, 1, 2, 2, 2, 0, 2], [0, 1, 2, 5], '2026-11-12')
   ];
 
+  var OTHER_ROLES = [['參與小組討論', 'Joins group discussions'], ['提供想法與建議', 'Shares ideas and suggestions'], ['協助確認成果', 'Helps review deliverables']];
   var TEAM = [
-    { zh: '柳心詠', en: 'Christina Liu', dept: ['國際文教與比較教育學系三年級', 'International and Comparative Education, Year 3'] },
-    { zh: '王雋瑋', en: 'Will Wang', dept: ['國際企業學系二年級', 'International Business, Year 2'] },
-    { zh: '劉炤偉', en: 'Ben Liu', dept: ['歷史學系一年級', 'History, Year 1'] },
+    { zh: '柳心詠', en: 'Christina Liu', dept: ['國際文教與比較教育學系三年級', 'International and Comparative Education, Year 3'], role: [['引導小組討論', 'Leads group discussions'], ['統整組員想法設計 AI Prompt', 'Turns team ideas into AI prompts'], ['產出成果供組員確認及繳交作業', 'Prepares deliverables for team review and submission']] },
+    { zh: '王雋瑋', en: 'Will Wang', dept: ['國際企業學系二年級', 'International Business, Year 2'], role: OTHER_ROLES },
+    { zh: '劉炤偉', en: 'Ben Liu', dept: ['歷史學系一年級', 'History, Year 1'], role: OTHER_ROLES },
     { zh: '張承恩', en: 'Noah Chang', dept: ['國際企業學系一年級', 'International Business, Year 1'], role: [['主要網頁撰寫', 'Lead web development'], ['技術協助', 'Technical support']] },
-    { zh: '許喬媗', en: 'Layla Hsu', dept: ['應用化學系一年級', 'Applied Chemistry, Year 1'] },
-    { zh: '謝旻恩', en: 'Ann Hsieh', dept: ['護理學系一年級', 'Nursing, Year 1'] },
-    { zh: '邱婕榕', en: 'Janet Chiu', dept: ['護理學系一年級', 'Nursing, Year 1'] }
+    { zh: '許喬媗', en: 'Layla Hsu', dept: ['應用化學系一年級', 'Applied Chemistry, Year 1'], role: OTHER_ROLES },
+    { zh: '謝旻恩', en: 'Ann Hsieh', dept: ['護理學系一年級', 'Nursing, Year 1'], role: OTHER_ROLES },
+    { zh: '邱婕榕', en: 'Janet Chiu', dept: ['護理學系一年級', 'Nursing, Year 1'], role: OTHER_ROLES }
   ];
 
   var TASKS = {
